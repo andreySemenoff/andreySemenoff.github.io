@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЗАО СКБ Хроматэк</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="d-flex flex-column h-100">
+
+    <header class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-between navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-none d-md-block" href="#">
+                    <img class="my_logo" src="icons/logo.png" alt="Хроматэк логотип">
+                </a>
+                <div class="d-none d-md-block">
+                    <a href="tel:88362685971" title="Позвонить" class="badge badge-light"><i class="fas fa-phone-alt pr-2"></i>+7(8362)68-59-71</a>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">Заказать звонок</button>
+                </div>
+                <a href="http://chromatec-instruments.com" class="badge badge-light d-none d-md-block">English version</a>
+    
+                <form class="form-inline my-2 my-lg-0 headerSearch">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту.." aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Найти</button>
+                </form>
+                <a class="navbar-brand d-none d-sm-block d-md-none" href="#">
+                    <img class="my_logo" src="icons/logo.png" alt="Хроматэк логотип">
+                </a>             
+            </nav>
+            <div class="d-lg-none d-xl-none d-md-none">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div>
+                        <a href="tel:88362685971" title="Позвонить" class="badge badge-light"><i class="fas fa-phone-alt pr-2"></i>+7(8362)68-59-71</a>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">Заказать звонок</button>
+                    </div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="pages/products/products.html">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Программы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="#">Применение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="#">Заказать</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Учебные курсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Поддержка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Библиотека</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Дилеры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Сертификаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Фотогалерея</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="container d-none d-md-block">
+            <div class="row">
+                <nav class="col" aria-label="breadcrumb">
+                    <ol class="breadcrumb py-0 mb-1">
+                        <li class="breadcrumb-item active" aria-current="page">Главная</li>
+                    </ol>
+                </nav>
+               <!--  <nav aria-label="breadcrumb my-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav> -->
+            </div>
+        </div>
+    </header>
+
+        <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Не дозвонились?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="modalName">Ваше имя</label>
+                            <input type="text" class="form-control" id="modalName">
+                        </div>
+                        <div class="form-group">
+                            <label for="modalCompany">Компания</label>
+                            <input type="text" class="form-control" id="modalCompany">
+                        </div>
+                        <div class="form-group">
+                            <label for="modalEmail">E-mail</label>
+                            <input type="email" class="form-control" id="modalEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="modalTel">Номер телефона</label>
+                            <input type="tel" class="form-control" id="modalTel">                        
+                        </div>
+                        <div class="form-group">
+                        <label for="modalText">Дополнительная информация</label>
+                        <textarea class="form-control" id="modalText" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Жду звонка!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container headerTop">
+        <div class="row">
+
+            <nav class="d-none d-md-flex navbar navbar-expand-md col-md-2 navbar-light bg-light my-nav">       
+                <div class="collapse navbar-collapse" >
+                    <ul class="navbar-nav flex-column mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="pages/products/products.html">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Программы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="#">Применение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light font-weight-bold" href="#">Заказать</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Учебные курсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Поддержка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Библиотека</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Дилеры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Сертификаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link badge-light" href="#">Фотогалерея</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-10">
+
+                <div id="carousel-main" class="carousel slide d-none d-sm-block" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-main" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel/7fcad1edf141f7f0e25ab6e7dc4c11fa.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel/aab814f78a4f35a84e1ef8cc06ccb9d3.jpeg" class="d-block w-100" alt="...">
+                        </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <section class="aboutUs">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>О компании</h3>
+                            <p> ЗАО СКБ "Хроматэк" - признанный лидер в разработке и производстве газохроматографического оборудования в России. Коллектив компании с более чем 30-летним опытом работы в области газовой хроматографии и хромато-масс-спектрометрии успешно работает и развивается на отечественном и зарубежном рынке аналитического оборудования.</p>
+                            <a href="#" class="btn btn-primary">Подробнее ...</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="embed-responsive embed-responsive-16by9 my-1">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z4bmJ2OFEe4?rel=0&autoplay=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="my-products my-1">
+                    <div class="row">
+                        <div class="card col-md-6">
+                            <img src="img/main/instrument1.png" class="card-img-top" alt="Хроматографы">
+                            <div class="card-body">
+                                <h5 class="card-title">Продукция</h5>
+                                <nav class="nav flex-column">
+                                    <a class="nav-link badge-light" href="#">Газовые лабораторные хроматографы</a>
+                                    <a class="nav-link badge-light" href="#">Хромато-масс-спектрометры</a>
+                                    <a class="nav-link badge-light" href="#">Дозаторы равновесного пара</a>
+                                    <a class="nav-link badge-light" href="#">Термодесорберы</a>
+                                    <a class="nav-link badge-light" href="#">ВЭЖХ</a>
+                                </nav>
+                                <a href="pages/products/products.html" class="btn btn-primary">Подробнее ...</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">                            
+                            <div class="card-body application">
+                                <h5 class="card-title">Применение</h5>
+                                <nav class="nav flex-column">
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#"> <div> Нефть и газ</div>
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle gas">
+                                            <img src="icons/icon-gas.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#"> <div> Промышленность и производство </div>
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle industrial">
+                                            <img src="icons/icon-industrial.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#">Экология 
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle bio">
+                                            <img src="icons/icon-bio.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#">Пищевые продукты 
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle food">
+                                            <img src="icons/icon-food.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#">Медицина и криминалистика 
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle forensic">
+                                            <img src="icons/icon-forensic.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="nav-link badge-light d-flex justify-content-between align-items-center" href="#">Фармацевтика 
+                                        <div class="application-img d-flex justify-content-center align-items-center rounded-circle pharm">
+                                            <img src="icons/icon-pharm.PNG" alt="">
+                                        </div>
+                                    </a>
+                                </nav>    
+                                <a href="#" class="btn btn-primary">Подробнее ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="news my-1">
+                    <h5 class="card-title">Новости и события</h5>
+                    <div class="row">
+                        
+                        <div class="card col-md-4 px-1">
+                            <img src="img/main/cancel.png" class="card-img-top" alt="Отмена курсов">
+                            <div class="card-body p-2">                                
+                                <h6 class="card-title">ВНИМАНИЕ! ВСЕ ОЧНЫЕ КУРСЫ И СЕМИНАРЫ ОТМЕНЕНЫ ДО 01 ИЮНЯ 2020 ГОДА.</h6>
+                                <a class="btn btn-sm btn-primary" href="#">Подробнее ...</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 px-1">
+                            <img src="img/main/2019_12_18_153942.png" class="card-img-top" alt="Обновление аналитика">
+                            <div class="card-body p-2">                           
+                                <p class="card-text">Выпущено обновление "Хроматэк Аналитик 3.1". Сборка 2019.10.21</p>
+                                <a class="btn btn-sm btn-primary" href="#">Подробнее ...</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 px-1">
+                            <img src="img/main/1.png" class="card-img-top" alt="Регламент технического обслуживания">
+                            <div class="card-body p-2">                                
+                                <p class="card-text">Общие положения, обязанности заказчика и исполнителя, согласование сроков, необходимое оборудование и материалы, перечень работ, оформление результатов ТО.</p>
+                                <a class="btn btn-sm btn-primary" href="#">Подробнее ...</a>
+                            </div>
+                        </div>
+                </section>
+    
+            </main>
+
+        </div>
+    </div>
+
+
+    <footer class="footer mt-auto bg-secondary py-2">
+        <div class="container bg-secondary">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="py-2 mb-1 text-light">Информационная служба ЗАО СКБ "ХРОМАТЭК"</p>
+                    <a href="tel:88362685971" title="Позвонить" class="badge badge-secondary py-2"><i class="fas fa-phone-alt pr-2"></i>+7(8362)68-59-71</a>
+                    <a href="tel:88362685970" title="Позвонить" class="badge badge-secondary py-2"><i class="fas fa-phone-alt pr-2"></i>+7(8362)68-59-70</a>
+                    <br>
+                    <a href="mailto:mail@chromatec.ru" class="badge badge-secondary py-2"><i class="fas fa-at pr-2"></i>mail@chromatec.ru</a>
+                </div>
+                <div class="col-md-3">
+                    <p class="py-2 mb-1 text-light">Служба технической поддержки</p>
+                    <a href="tel:88362685932" title="Позвонить" class="badge badge-secondary py-2"><i class="fas fa-phone-alt pr-2"></i>+7(8362)68-59-32</a>
+                    <br>
+                    <a href="mailto:mail@chromatec.ru" class="badge badge-secondary py-2"><i class="fas fa-at pr-2"></i>32@chromatec.ru</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="py-2 mb-1 text-light">Только для сообщений в техподдержку Viber и WhatsApp
+                        <br>
+                        <i class="far fa-comments pr-2"></i>+7 987 709 42 00
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://wa.me/79877094200" title="Написать" class="badge badge-secondary py-2"><img src="icons/whatsapp.png" alt="whatsapp"></a>
+                        <a href="https://viber.click/79877094200" title="Написать" class="badge badge-secondary py-2"><img src="icons/viber.png" alt="viber"></a>
+                    </div>                                       
+                </div>
+                <div class="col-md-3 pt-3 society">
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.facebook.com/ChromatecInstruments/" class="badge badge-secondary" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.youtube.com/channel/UCIt9s6HAK7kgPqDbZ2NHU7Q" class="badge badge-secondary" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                        <a href="https://vk.com/chromatec" class="badge badge-secondary" target="_blank"><i class="fab fa-vk"></i></a>
+                    </div>
+                    <a href="http://chromatec-instruments.com" class="badge badge-secondary d-flex justify-content-center mt-3">English version</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
